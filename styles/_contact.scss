@@ -1,0 +1,65 @@
+.contact {
+    margin-top: 120px;
+    padding: 0 100px;
+}
+
+.contact-inner {
+    margin: 0 auto 120px auto;
+    display: flex;
+    justify-content: space-between;
+    img {
+        width: 500px;
+        z-index: 1;
+    }
+}
+.contact-left {
+    position: relative;
+}
+
+.contact-detail {
+    width: 382px;
+    height: 186px;
+    margin: 0 auto;
+    position: relative;
+    bottom: 80px;
+    background-color: $white;
+    z-index: 2;
+    @include shadow;
+}
+.contact-txt {
+    @include center;
+    text-align: center;
+}
+
+.office-name {
+    font-size: 18px;
+    color: $base-color;
+    font-weight: bold;
+}
+
+.office-address {
+    font-size: 14px;
+    color: $base-color;
+    font-weight: bold;
+}
+
+.contact-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+.tell,.mail {
+    width: 640px;
+    height: 140px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    img {
+        width: 70px;
+    }
+}
+.mail {
+    @include background;
+    p {
+        color: $white;
+    }
+}

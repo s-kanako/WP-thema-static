@@ -1,17 +1,29 @@
 body {
   font-family: 'YuGothic','ヒラギノ角ゴ ProN';
   color: $base-color;
+
 }
 .container {
   margin: 0 auto;
+  overflow: hidden;
+  width: 100%;
+
+  // padding: 0 100px;
 }
 a {
   list-style: none;
+  text-decoration: none;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+
+hr {
+  border: 1px solid #B1B1B1;
+  width: 1280px;
 }
 
 
