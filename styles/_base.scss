@@ -1,12 +1,14 @@
 body {
   font-family: 'YuGothic','ヒラギノ角ゴ ProN';
   color: $base-color;
+  margin: 0;
+  padding: 0;
 
 }
 .container {
   margin: 0 auto;
   overflow: hidden;
-  width: 100%;
+  max-width: 100%;
 
   // padding: 0 100px;
 }
@@ -21,9 +23,32 @@ img {
 }
 
 
+.heading  {
+  margin-top: 120px;
+  width: 1080px;
+  margin-right: auto;
+  margin-left: auto;
+  p {
+      font-size: 18px;
+      color: #555555;
+  }
+}
+
+.interview-heading img {
+  width: 39%;
+}
+.mission-heading img {
+  width: 63%;
+}
+.news-heading img {
+  width: 23%;
+  margin-top: 90px;
+}
+
 hr {
   border: 1px solid #B1B1B1;
-  width: 1280px;
+  margin: 0;
+  width: 100%;
 }
 
 

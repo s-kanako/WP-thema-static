@@ -1,21 +1,26 @@
-
-
-
 .mv {
+    // position: relative;
+}
+
+
+.mv-top {
+    display: flex;
     background-image: url('../img/mv.jpg');
     background-size: cover;
-    width: 1080px;
-    height: 610px;
+    background-position: right;
     background-repeat: no-repeat;
-    margin-left: 195px;
+    margin: 0 0 0 auto;
+    width: 84%;
+    height: 610px;
+
 }
 
 .mv-txt {
     position: relative;
-    top: 85px;
     right: 100px;
+    top: 85px;
     img {
-        width: 40%;
+        width: 45%;
     }
     p {
         font-size: 30px;
@@ -23,12 +28,15 @@
     }
 }
 
+.mv-img {
+    z-index: 1;
+}
 .mv-wrapper {
     display: flex;
     justify-content: center;
-    position: relative;
-    top: 221px;
-    right: 78px;
+    // position: absolute;
+    // top: 570px;
+    margin: 0 auto;
 }
 .mv-box {
     width: 200px;
@@ -96,7 +104,7 @@
 .points {
     background-color: $grey;
     height: 497px;
-    padding: 0;
+    padding: 0 100px;
     margin: 0;
 }
 .point-inner {
@@ -105,6 +113,7 @@
     justify-content: space-between;
     overflow: hidden;
     width: 100%;
+    margin: 0 auto;
 }
 .point {
     width: 276px;
@@ -112,13 +121,20 @@
     background-color: $white;
     text-align: center;
     img {
-        width: 27%;
-        height: 120px;
         margin: 31px 0;
     }
     p {
         font-size: 16px;
     }
+}
+.point1 img {
+    width: 27%;
+}
+.point2 img {
+    width: 32%;
+}
+.point3 img {
+    width: 31%;
 }
 
 
@@ -128,7 +144,8 @@
     font-size: 16px;
     margin: 40px auto 0 auto;
     border-radius: 24px;
-    text-align: center;
+    align-items: center;
+    display: flex;
     @include background;
 
     a {
@@ -142,3 +159,18 @@
 
 
 
+
+
+@media screen and (max-width: 1024px) {
+    // .mv-wrapper {
+    //     width: 69%;
+    // }
+}
+
+
+@media screen and (max-width: 766px) {
+
+    .mv-top {
+        background-image: url('../img/mv-sp.jpg');
+    }
+}

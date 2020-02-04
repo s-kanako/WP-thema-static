@@ -18,7 +18,8 @@ $grey: #F5F5F5;
 }
 
 @mixin background {
-    background:linear-gradient(#FF9933, #FF7166);
+    // to 方向
+    background:linear-gradient(to left,#FF7166,#FF9933 );
 }
 
 @mixin link {

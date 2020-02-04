@@ -1,12 +1,16 @@
 header {
-    // header両端に初期の謎のpaddingついている
     display: flex;
     justify-content: space-between;
-    height: 60px;
     align-items: center;
-    font-size: 18px;
-    width: 1080px;
+    width: 100%;
+    max-width: 1080px;
+    height: 60px;
     margin: 0 auto;
+    font-size: 18px;
+
+    h1 {
+        width: 136px;
+    }
 
     .header-right {
         display: flex;
@@ -17,12 +21,10 @@ header {
         margin-right: 35px;
         font-weight: bold;
     }
-    img {
-        width: 12%;
-    }
+
 }
 
-.header-topic {
+.header-entry {
     margin-right: 0;
     color: $point-color;
     border: 2px solid $point-color;
@@ -36,4 +38,8 @@ header {
     }
 }
 
+@media screen and (max-width: 1080px) {
+    
+
+}
 
