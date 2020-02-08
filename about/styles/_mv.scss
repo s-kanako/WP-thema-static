@@ -1,0 +1,79 @@
+.mv {
+    margin: 0 auto;
+    width: 1080px;
+    max-width: 100%;
+}
+.mv-content {
+    display: flex;
+    position: relative;
+
+}
+
+.mv-left {
+    width: 44%;
+    z-index: 2;
+    @include shadow;
+
+    img {
+        width: 100%;
+    }
+}
+.mv-right {
+    max-width: 100%;
+    width: 770px;
+    background-color: $grey;
+    padding: 36px 36px 36px 0;
+    z-index: 1;
+    position: absolute;
+    top: 50px;
+    left: 315px;
+}
+.mv-txt {
+    // これでやるか否か
+    margin: 0 0 0 auto;
+    width: 516px;
+    h2 {
+        font-size: 2.2rem;
+        font-weight: bold;
+        margin-bottom: 24px;
+    }
+}
+.ceo {
+    display: flex;
+    font-weight: bold;
+    margin-top: 42px;
+    align-items: center;
+    text-align: right;
+}
+.ceo-type {
+    margin-right: 20px;
+}
+.ceo-name {
+    font-size: 26px;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .mv-right {
+        padding: 36px 5px;
+    }
+}
+
+
+@media screen and (max-width: 767px) {
+    .mv-content {
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 15px;
+    }
+    .mv-right {
+        position: static;
+        max-width: 100%;
+        padding: 80px 15px;
+    }
+    .mv-left {
+        width: 87%;
+    }
+    .mv-txt-bottom {
+    }
+}

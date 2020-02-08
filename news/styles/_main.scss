@@ -1,0 +1,134 @@
+.news {
+    // height: 788px;
+    padding: 0 100px;
+}
+
+
+.news-inner {
+    margin: 0 auto;
+    
+    margin-top: 50px;
+    width: 1080px;
+    max-width: 100%;
+}
+.news-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 191px;
+}
+
+.news-card {
+    max-width: 100%;
+    width: 330px;
+    height: 303px;
+    background-color: $white;
+    position: relative;
+    margin-bottom: 50px;
+
+    @include shadow;
+
+    img {
+        margin: 15px;
+        width: 300px;
+        height: 200px;
+    }
+    a {
+        @include link;
+    }
+}
+.card-top {
+    position: relative;
+
+    p {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        width: 82px;
+        height: 20px;
+        background-color: #FF9933;
+        color: $white;
+        font-size: 12px;
+        text-align: center;
+        font-weight: bold;
+    }
+
+}
+.news-detail {
+    margin-left: 15px;
+
+    .news-time {
+        color: $base-color;
+        font-size: 14px;
+    }
+    .news-txt {
+        color: #090803;
+        font-weight: bold;
+        font-size: 18px;
+    }
+}
+
+.news3 {
+    height: 335px;
+}
+.button {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 191px;
+}
+.page {
+    width: 156px;
+    height: 36px;
+    background-color: $orange;
+    position: relative;
+    margin-bottom: 100px;
+    a {
+        color: $white;
+        line-height: 36px;
+    }
+    p {
+        text-align: center;
+        line-height: 1;
+    }
+}
+
+
+
+@media screen and (max-width:1080px) {
+    .news {
+        padding: 0 ;
+    }
+    .news-flex{
+        padding: 0  50px;
+    }
+
+}
+
+
+@media screen and (max-width:767px) {
+
+    .news-flex {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0 42px;
+        }
+    .button {
+        padding: 0 30px;
+    }
+    }
+
+@media screen and (max-width: 413px) {
+    .news-flex {
+        padding: 0 15px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .news-flex {
+        padding: 0;
+    }
+    .news-card img {
+        margin: 11px;
+    }
+}
+    

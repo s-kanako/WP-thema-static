@@ -1,0 +1,109 @@
+
+
+form {
+    width: 1080px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0 15px;
+}
+.form {
+    margin: 62px auto 120px auto;
+    // インラインブロックにする（中央よせのために）
+    display: inline-block;
+    text-align: left;
+    p {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+}
+
+input {
+    border: 1px solid $grey;
+    flex-direction: column;
+}
+textarea {
+    border: 1px solid $grey;
+
+}
+.name,.mail {
+    input {
+    width: 400px;
+    }
+}
+.title {
+    display: flex;
+}
+.must {
+    width: 47px;
+    height: 19px;
+    margin-left: 8px;
+    font-weight: bold;
+
+    p {
+        background-color: $point-color;
+        color: $white;
+        font-size: 1.4rem;
+        text-align: center;
+    }
+}
+
+.item {
+    margin-bottom: 31px;
+}
+
+.occupation-detail {
+    flex-direction: column;
+    display: flex;
+}
+.occupation-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 14px;
+}
+textarea {
+    width: 400px;
+    height: 100px;
+}
+.button {
+    text-align: center;
+    input {
+        @include background;
+        @include shadow;
+        color: $white;
+        width: 155px;
+        border-radius: 24px;
+        margin: 0 auto;
+        height: 48px;
+        line-height: 48px;
+        padding: 0 59px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    form {
+        p {
+            text-align: left;
+        }
+    }
+    .name,.mail {
+        input {
+            width: 386px;
+        }
+    }
+    textarea {
+        width: 386px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .name,.mail {
+        input {
+            width: 285px;
+        }
+    }
+    textarea {
+        width: 285px;
+    }
+}
