@@ -1,0 +1,274 @@
+
+    /*  お問い合わせ　*/
+    entry-p {
+        text-align: center;
+    }
+    .must{
+            color: #fff;
+            margin-right: 10px;
+            padding: 1px 6px;
+            background-color: #dc143c;
+            font-size: 14px;
+            margin-left: 10px;
+            border-radius: 6px;
+            width: 60px;
+            font-size: 11px;
+        }
+        label {
+            text-align: center;
+    }
+        .text {
+            font-weight: bold;
+            margin-top: 8px;
+        }
+    .wpcf7{
+        width: 400px;
+        margin: 0 auto;
+    }
+    .wpcf7-form {
+        margin-top: 70px;
+    }
+        .wpcf7-form-control  {
+                    margin: 0 auto;
+            border: #909090 1px solid;
+            margin-bottom: 31px;
+            width: 400px;
+            height: 30px;
+        }
+        .wpcf7-radio {
+            flex-direction: column;
+            display: flex;
+            text-align: left;
+            border: none;
+            padding-bottom: 80px;
+        }
+        .wpcf7-textarea {
+            width: 400px;
+            height: 70px;
+        }
+        .wpcf7-submit {
+            text-align: center;
+            border-radius: 24px;
+            background: #dc143c;
+                            font-weight: bold;
+            color: #fff;
+            height: 48px;
+            width: 155px;
+            border: none;
+            margin-bottom: 120px;
+            box-shadow: 0 11px 20px rgba(0,0,0,0.16); 
+        }
+    .submit {
+        text-align: center;
+    }
+    .form-control {
+        padding: 5px;
+    }
+        @media screen and (max-width: 1080px) {
+        .nav-top {
+            padding: 0 15px; }
+            .nav-top h2 {
+            padding: 0; }
+
+        .bread-list {
+            padding: 0 15px; } 
+        .form {
+        margin: 62px auto 120px auto;
+        display: inline-block;
+        text-align: left; }
+        .form p {
+            font-weight: bold;
+            margin-bottom: 10px; }
+
+        
+
+        textarea {
+        border: 1px solid #F5F5F5; }
+
+        .e-name input, .email input {
+        width: 400px; }
+
+        .title {
+        display: flex; }
+
+        .must {
+        width: 47px;
+        height: 19px;
+        margin-left: 8px;
+        font-weight: bold; }
+        .must p {
+            background-color: #dd6666;
+            color: #fff;
+            font-size: 1.4rem;
+            text-align: center; }
+
+        .item {
+        margin-bottom: 31px; }
+
+        textarea {
+        width: 400px;
+        height: 100px; }
+
+        }
+
+        
+        @media screen and (max-width: 767px) {
+            .nav-top {
+                height: 70px;
+            }
+            .nav-top h2 {
+                line-height: 70px;
+            }
+        }
+
+        @media screen and (max-width: 425px) {
+        form {
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+        form p {
+            text-align: left; }
+
+        .wpcf7-form-control {
+            width: 380px;
+        }
+
+        .name input, .email input {
+            width: 386px; }
+
+        textarea {
+            width: 386px; } 
+        }
+
+
+        @media screen and (max-width: 375px) {
+        
+        form {
+            padding: 0;
+        }
+        .wpcf7-form-control {
+            width: 320px;
+        }
+
+        .name input, .email input {
+            width: 285px; }
+
+        textarea {
+            width: 285px; } }
+
+    /* クレジット消す */
+    .copySection p:last-child{
+        display:none;
+    }
+
+    /* ボタンのCSS　*/
+    .light-container{
+    text-align:center;
+    margin-top:40px;
+    }
+    .btn-animation-02 {
+            font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    background-color: #DC143C;
+    border: 2px solid #DC143C ;
+    font-size: 16px;
+    color: #DC143C;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 24px;
+    position: relative;
+        text-decoration:none;
+        letter-spacing: 0.1em;
+    }
+    .btn-animation-02 span {
+    position: relative;
+    z-index: 1;
+    }
+    .btn-animation-02::before,
+    .btn-animation-02::after {
+    content: "";
+    display: block;
+    background-color: #FFF;
+    width: 50%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    transition: .2s;
+    }
+    .btn-animation-02::before {
+    left: 0;
+    }
+    .btn-animation-02::after {
+    right: 0;
+    }
+    .btn-animation-02:hover:before,
+    .btn-animation-02:hover:after {
+    width: 0;
+    background-color: #FFF;
+    }
+    .btn-animation-02:hover {
+    color: #FFF;
+        text-decoration:none;
+    }
+
+    /*  事業ページのタイトル　*/
+    h2 {
+        font-weight: bold;
+    }
+    .business_ttl {
+        font-weight:bold;
+        border-bottom: 1px solid lightgrey;
+    }
+    row {
+        clear: both;
+    }
+
+    .mainSection-col-two {
+                        margin: 0 auto!important; 
+                        float: none;
+                max-width: 100%;
+                width: 800px
+                }
+
+    /*  選手一覧ページ　*/
+    .type-post {
+    display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .media .postList_thumbnail {
+            width: 250px!important;
+        padding-right: 0;
+    }
+
+    .postList {
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    /* 選手個人ページ */
+    .entry-meta {
+            display: none;
+    }
+    .entry-meta-dataList dt {
+        background-color: #dc143c;
+    }
+    #respond {
+        display: none;
+    }
+    .subSection {
+        display: none;
+    }
+
+    .vk_post_title_new  {
+        display: none;
+    }
+    /*  pagenation */
+    .navigation {
+        margin: 50px auto;
+    }
